@@ -1,0 +1,56 @@
+.holder h2{
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.novedades{
+   margin: 50px;
+   text-align: justify;
+}
+
+.novedades h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(71, 69, 69);
+}
+
+.novedades h2 {
+    font-size: 20px;
+    color: rgb(71, 69, 69);
+}
+.novedades h1, h2{
+    text-align: center;
+}
+
+.contain{
+    box-sizing: border-box;
+}
+
+.contain img{
+    width:100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+@media (max-width:480px){
+    .holder h2{
+        font-size: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color:rgb(50, 50, 50);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .novedades{
+        margin: 0px 16px 0px 16px;
+     }
+     
+     .novedades h1 {
+         font-size: 1.2em;
+     }
+     
+     .novedades h2 {
+         font-size: 1em;
+         color: rgb(71, 69, 69);
+     }
+}

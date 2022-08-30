@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&family=Yuji+Boku&display=swap');
+
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about img{
+  width: 100%;
+  height:40vh;
+  background-position: no-repeat;
+  background-size: cover;
+}
+h3{
+  font-style: italic;
+}
+
+#services img{
+  width:90px;
+  background: rgb(228, 163, 43);
+  border-radius: 50%;
+}
+
+.containerA{
+  margin: 0px 30px;
+}
+
+.aboutBottom{
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.4rem;
+}
+
+#root > div > div.about > div > div > div > div.row.row1 > div > img{
+  height:30vh;
+  width:100%;
+}
+
+#root > div > div.about > div > div > div > div.aboutBottom > h2{
+  font-size:3.5rem;
+  margin-top:-30px;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-style: italic;
+  color: #31b675;
+}
+
+#root > div > div.about > div > div > div > div.row.row1 > h2{
+  font-size: 3rem;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-style: italic;
+}
+
+#root > div > div.about > div > div > div > div.row.row1 > h4 {
+    color: #31b675;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/*------HeroSection-------*/
+#hero{
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+#hero > div.background{
+  height: 100%;
+}
+
+#hero > div.background > img{
+  width: 100%;
+  filter: brightness(60%);
+}
+
+#hero > div.content{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  text-shadow: rgb(30, 30, 30) 0.05em 0.1em 0.1em;
+}
+#hero > div.content > div > h2{
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin-top: 40px;
+  font-family: 'Yuji Boku', serif;
+}
+
+
+#hero > div.content > div > p{
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  line-height: 25px;
+  margin: 10px auto;
+  font-weight: light;
+  padding: 0rem 30rem;
+}
+
+#hero > div.content > div > button{
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background-color: #ef7925;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 0 auto;
+}
+#hero > div.content > div > button > a{
+  text-decoration: none;
+  color: white;
+  text-shadow: rgb(30, 30, 30) 0.05em 0.1em 0.1em;
+}
+
+#hero > div.content > div > button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(182, 169, 169);
+  transform: scale(1.1);
+}
+
+  @media screen and (max-width: 1400px) {
+    .aboutCard {
+      flex-direction: column;
+    }
+    .about img{
+      height:30vh;
+    }
+    #services img{
+      width:70px;
+    }
+
+    #root > div > div.about > div > div > div > div.row.row1 > div > img{
+      height:25vh;
+      width:90vw;
+      margin-bottom: 20px;
+    }
+    #hero{
+      margin-top: .5rem;
+    }
+
+    #hero > div.content{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+}
+    #hero > div.content > div > h2{
+      font-size:1.3rem;
+      margin-bottom: 20px;
+    }
+
+    #hero > div.content > div > p{
+      display: none;
+    }
+
+    #hero > div.content > div > button{
+      padding: .7rem .7rem;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      margin-bottom:5px;
+  }
+  }
+
+
+ 

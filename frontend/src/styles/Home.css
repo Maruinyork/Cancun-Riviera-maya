@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&family=Yuji+Boku&display=swap');
+
+
+.headerContainer {
+    width: auto;
+}
+
+.carousel-inner {
+    width: 100%; 
+    background-size: cover;
+    background-color:#FBFCFC;
+    text-shadow: rgb(30, 30, 30) 0.05em 0.1em 0.1em;
+    background-position: center;
+    position: relative; /*para que se muestre despues del menu de navegacion*/
+    z-index: -1000;
+    }
+    
+.carousel-inner:before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1); /*oscurezco un poco las tonalidades*/
+}
+
+#root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(1) > div > h3{
+    text-shadow: rgb(40, 39, 39) 0.2em 0.2em 0.2em;
+    text-align: start;
+    font-size: 80px;
+    font-weight: 50;
+    color:white;
+    margin-right: 70%;
+    font-style: italic;
+    font-family: 'Darker Grotesque', sans-serif;   
+}
+#root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(1) > div > p{
+    color:white;
+    text-shadow: rgb(40, 40, 40) 0.05em 0.1em 0.1em;
+    text-align: end;
+    font-size: 40px;
+    margin-right: 50%;
+    font-weight: lighter;
+    font-family: 'Yuji Boku', serif;
+    font-style: italic;
+}
+
+
+#root > div > div.headerContainer > div > div.carousel-inner > div.active.carousel-item > div > p{
+    color:white;
+    text-shadow: rgb(40, 40, 40) 0.05em 0.1em 0.1em;
+    text-align: start;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 5px 15px 5px;
+}
+
+#root > div > div.headerContainer > div.carousel.slide > div.carousel-indicators{
+    display: none;
+}
+#root > div > div.headerContainer > div.carousel.slide > div.carousel-inner img{
+    height: 90vh;
+    filter: brightness(90%);
+}
+
+@media screen and (max-width:768px){
+    #root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(1) > div > h3{
+        font-size: 40px;
+        margin-left: 0%;
+        margin-top: 15px;
+    }
+
+    #root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(1) > div > p{
+        font-size: 14px;
+    }
+    .carousel-inner {
+        max-height:60rem !important; /*para pantallas pequeñas es el tamaño ideal*/
+    }
+    #root > div > div.headerContainer > div.carousel.slide > div.carousel-inner img{
+        height: 50vh;
+    }
+    #root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(2) > div > h3{
+        font-size: 30px;
+        color:white;
+        font-style: italic;
+        font-family: 'Darker Grotesque', sans-serif;   
+    }
+}
+
+@media screen and (max-width:480px){
+    #root > div > div.headerContainer > div.carousel.slide > div.carousel-inner img{
+        height: 50vh;
+    }
+    #root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(2) > div > h3{
+        font-size: 27px;
+        color:white; 
+    }
+    #root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(1) > div > p{
+        font-size: 12px;
+        margin-bottom: -25px;
+    }
+    #root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(2) > div > p{
+        font-size: 12px;
+        margin-bottom: -25px;
+    }
+    #root > div > div.headerContainer > div > div.carousel-inner > div:nth-child(3) > div > p{
+        font-size: 12px;
+        margin-bottom: -25px;
+    }
+
+}
+
