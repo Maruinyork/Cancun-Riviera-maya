@@ -1,5 +1,5 @@
 # Cancun-Riviera-maya
-Sitio desarrollado cuyo frontend esta desarrollado en React.js. Se utilizo Node.js como lenguaje de servidor y Handlebars como motor de plantillas. Permite enviar mails mediante un formulario. Puede realizar las 4 operaciones básicas de las bases de datos: leer, escribir, modificar y eliminar registros de una tabla. El sitio o aplicación es totalmente responsive. Aquí se subió solamente la parte de frontend, pero el sitio cuenta con un backend y una pagina de administrador. 
+Sitio realizado como proyecto final para la carrera de Experto universitario en programación web full stack de la UTN. El frontend esta desarrollado en React.js. Se utilizo Node.js como lenguaje de servidor y Handlebars como motor de plantillas. Permite enviar mails mediante un formulario. Puede realizar las 4 operaciones básicas de las bases de datos: leer, escribir, modificar y eliminar registros de una tabla. El sitio o aplicación es totalmente responsive. Aquí se subió solamente la parte de frontend, pero el sitio cuenta con un backend y una pagina de administrador. 
 Despliegue:
 https://rivieramayafront.herokuapp.com/
 https://rivieramayaback.herokuapp.com/admin/login
